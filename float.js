@@ -1,5 +1,5 @@
 const container = document.querySelector('.floating-icons-container');
-const iconSrc = 'assets/whatsapp-icon.png'; // Replace with your correct image path
+const iconSrc = 'whatsapp-icon.png'; // Replace with your correct image path
 
 function createFloatingIcon() {
   const icon = document.createElement('img');
