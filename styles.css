@@ -1,6 +1,6 @@
 /* Global */
 .topbar {
-  background-color: #bbbbbb; /* dark grey */
+  background-color: #3366ff; /* vibrant blue */
   color: white;
   height: 28px;
   overflow: hidden;
@@ -12,12 +12,20 @@
   white-space: nowrap;
   display: inline-block;
   animation: slideText 25s linear infinite;
-  padding-left: 100%; /* Start from the right */
+  padding-left: 100%;
 }
 
 .topbar-ticker span {
   font-size: 13px;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.topbar-star {
+  color: #72f67c; /* bright green like in your screenshot */
+  font-size: 14px;
 }
 
 /* Animation */
@@ -29,6 +37,7 @@
     transform: translateX(-100%);
   }
 }
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
