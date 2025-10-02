@@ -11,7 +11,7 @@
 .topbar-ticker {
   white-space: nowrap;
   display: inline-block;
-  animation: slideText 35s linear infinite;
+  animation: slideText 50s linear infinite;
   padding-left: 100%;
 }
 
@@ -84,7 +84,8 @@ html, body {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 1rem;
+  transform: translate(75px);
 }
 
 .header-logo {
@@ -96,7 +97,7 @@ html, body {
 .header-right {
   display: flex;
   align-items: center;
-  transform: translate(-40px);
+  transform: translate(-80px);
 }
 
 .header-cta-outline {
@@ -193,7 +194,7 @@ html, body {
   width: 520px;
   height: 740px;
   object-fit: contain;
-  transform: translateY(-70px); /* Optional: adjust vertical position */
+  transform: translateY(-30px); /* Optional: adjust vertical position */
 }
 
 /* Section Titles */
@@ -307,20 +308,19 @@ html, body {
 .floating-icon {
   position: absolute;
   bottom: -40px;
-  opacity: 0.6;
-  animation-name: floatUp;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  opacity: 0.8;
   pointer-events: none;
+  z-index: 1;
+  animation: floatUpAndRotate 30s linear forwards;
 }
 
-@keyframes floatUp {
+@keyframes floatUpAndRotate {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0deg);
     opacity: 0.8;
   }
   100% {
-    transform: translateY(-120vh);
+    transform: translateY(-120vh) rotate(720deg); /* 2 full spins */
     opacity: 0;
   }
 }
